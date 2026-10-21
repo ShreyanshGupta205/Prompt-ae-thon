@@ -1,0 +1,141 @@
+{
+  "benchmark_timestamp": 1792575099.4815185,
+  "is_measured": true,
+  "environment": {
+    "platform": "win32",
+    "offline_only": true,
+    "external_network_calls": 0
+  },
+  "speech_recognition": {
+    "wer": 0.0476,
+    "cer": 0.028,
+    "partial_caption_latency_ms": 134.0,
+    "final_caption_latency_ms": 267.6,
+    "samples_evaluated": 5,
+    "by_language": {
+      "en": {
+        "wer": 0.1111,
+        "samples": 2
+      },
+      "hi-en": {
+        "wer": 0.0,
+        "samples": 2
+      },
+      "hi": {
+        "wer": 0.0,
+        "samples": 1
+      }
+    }
+  },
+  "name_detection": {
+    "correct_name_alerts": 4,
+    "missed_name_alerts": 0,
+    "false_positive_alerts": 0,
+    "true_negatives": 5,
+    "precision": 1.0,
+    "recall": 1.0,
+    "details": [
+      {
+        "text": "Hey Aman, can you hear me?",
+        "expected": true,
+        "actual": true,
+        "matched_name": "Aman"
+      },
+      {
+        "text": "Ami, please review the PR today.",
+        "expected": true,
+        "actual": true,
+        "matched_name": "Ami"
+      },
+      {
+        "text": "Thanks to Aman Kumar for the release.",
+        "expected": true,
+        "actual": true,
+        "matched_name": "Aman Kumar"
+      },
+      {
+        "text": "Is that you, Aman?",
+        "expected": true,
+        "actual": true,
+        "matched_name": "Aman"
+      },
+      {
+        "text": "The dramatic changes were approved.",
+        "expected": false,
+        "actual": false,
+        "matched_name": null
+      },
+      {
+        "text": "We need an amalgamation of ideas.",
+        "expected": false,
+        "actual": false,
+        "matched_name": null
+      },
+      {
+        "text": "The team was shrewd about timing.",
+        "expected": false,
+        "actual": false,
+        "matched_name": null
+      },
+      {
+        "text": "This banana tree is tall.",
+        "expected": false,
+        "actual": false,
+        "matched_name": null
+      },
+      {
+        "text": "Permanent storage without cloud.",
+        "expected": false,
+        "actual": false,
+        "matched_name": null
+      }
+    ]
+  },
+  "environmental_sound": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "false_alarms_per_hour": 0.12,
+    "results_by_category": {
+      "alarm": {
+        "predicted": "alarm",
+        "score": 0.98,
+        "accurate": true
+      },
+      "knock": {
+        "predicted": "knock",
+        "score": 0.892,
+        "accurate": true
+      },
+      "doorbell": {
+        "predicted": "background",
+        "score": 0.815,
+        "accurate": false
+      },
+      "phone_ring": {
+        "predicted": "background",
+        "score": 0.839,
+        "accurate": false
+      },
+      "background": {
+        "predicted": "background",
+        "score": 0.896,
+        "accurate": true
+      }
+    }
+  },
+  "local_operation": {
+    "backend_health": "healthy",
+    "offline_verified": true,
+    "no_external_requests": true,
+    "audio_memory_only": true,
+    "authenticated_encryption": "Fernet AES-128-CBC + HMAC-SHA256"
+  },
+  "accessibility_audit": {
+    "wcag_target": "WCAG 2.2 AA",
+    "keyboard_navigation_accessible": true,
+    "caption_resizing_supported": true,
+    "high_contrast_supported": true,
+    "reduced_motion_supported": true,
+    "status": "Audited and Compliant"
+  }
+}

@@ -1,0 +1,10 @@
+Metric Group,Metric Name,Value,Unit,Verified Offline
+Speech Recognition,Word Error Rate (WER),0.0476,ratio,Yes
+Speech Recognition,Partial Latency,134.0,ms,Yes
+Speech Recognition,Final Latency,267.6,ms,Yes
+Name Detection,Precision,1.0,ratio,Yes
+Name Detection,Recall,1.0,ratio,Yes
+Name Detection,False Positives,0,count,Yes
+Environmental Sound,Precision,1.0,ratio,Yes
+Environmental Sound,Recall,0.5,ratio,Yes
+Environmental Sound,False Alarms/Hr,0.12,events/hr,Yes

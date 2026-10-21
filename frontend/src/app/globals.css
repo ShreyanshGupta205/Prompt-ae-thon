@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary-indigo: #2E2A78;
+    --primary-indigo-light: #443fa8;
+    --primary-indigo-dark: #1e1a5c;
+    --accent-orange: #B8530A;
+    --accent-orange-hover: #9e4405;
+    --peach-bg: #FFF3E3;
+    --peach-border: #FCD9B6;
+    --surface: #FFFFFF;
+    --surface-muted: #F8F9FA;
+    --surface-border: #E5E7EB;
+    --text-primary: #111827;
+    --text-secondary: #4B5563;
+    --text-muted: #6B7280;
+  }
+
+  .high-contrast {
+    --primary-indigo: #0F0C42;
+    --primary-indigo-light: #201b7a;
+    --primary-indigo-dark: #000000;
+    --accent-orange: #8F3C00;
+    --peach-bg: #FFF8EE;
+    --peach-border: #B8530A;
+    --surface: #FFFFFF;
+    --surface-muted: #F0F2F5;
+    --surface-border: #000000;
+    --text-primary: #000000;
+    --text-secondary: #1F2937;
+    --text-muted: #374151;
+  }
+
+  .reduced-motion * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  background-color: #F8F9FA;
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 3px solid #B8530A;
+  outline-offset: 2px;
+}
+
+/* Caption scaling classes */
+.caption-size-small {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.caption-size-medium {
+  font-size: 1.375rem;
+  line-height: 2.125rem;
+}
+
+.caption-size-large {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+}
+
+.caption-size-xlarge {
+  font-size: 2.125rem;
+  line-height: 3rem;
+}
+
+/* Animations */
+@keyframes pulseSlow {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.03); opacity: 0.9; }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 2.5s infinite ease-in-out;
+}
+
+@keyframes waveBar {
+  0%, 100% { height: 6px; }
+  50% { height: 22px; }
+}
+
+.wave-bar-1 { animation: waveBar 1.2s infinite ease-in-out 0.1s; }
+.wave-bar-2 { animation: waveBar 1.2s infinite ease-in-out 0.3s; }
+.wave-bar-3 { animation: waveBar 1.2s infinite ease-in-out 0.5s; }
+.wave-bar-4 { animation: waveBar 1.2s infinite ease-in-out 0.2s; }
+.wave-bar-5 { animation: waveBar 1.2s infinite ease-in-out 0.4s; }
